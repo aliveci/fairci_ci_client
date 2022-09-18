@@ -1,8 +1,9 @@
-import 'package:fairci_ci_client/src/features/dashboard/dashboard_page.dart';
+import 'package:fairci_ci_client/src/features/auth_gate/auth_gate.dart';
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(
         useMaterial3: true,
       ),
-      home: const DashboardPage(),
+      home: const AuthGate(),
     );
   }
 }

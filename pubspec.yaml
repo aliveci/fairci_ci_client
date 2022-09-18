@@ -9,7 +9,9 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  hooks_riverpod: ^2.0.0-dev.9
   process_run: ^0.12.3+2
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:
