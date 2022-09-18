@@ -1,18 +1,15 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:process_run/shell.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
-class DashboardPage extends StatefulWidget {
-  const DashboardPage({super.key});
+class ClientDashboardPage extends StatefulWidget {
+  const ClientDashboardPage({super.key});
 
   @override
-  State<DashboardPage> createState() => _DashboardPageState();
+  State<ClientDashboardPage> createState() => _ClientDashboardPageState();
 }
 
-class _DashboardPageState extends State<DashboardPage> {
+class _ClientDashboardPageState extends State<ClientDashboardPage> {
   List<String> results = [];
 
   @override
@@ -42,6 +39,12 @@ class _DashboardPageState extends State<DashboardPage> {
               }
             },
           ),
+          IconButton(
+              onPressed: () async {
+                final prefs = await SharedPreferences.getInstance();
+                await prefs.remove('isHost');
+              },
+              icon: const Icon(Icons.exit_to_app))
         ],
       ),
       body: ListView.builder(
