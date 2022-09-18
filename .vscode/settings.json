@@ -1,0 +1,10 @@
+{
+    "cSpell.words": [
+        "cupertino",
+        "fairci"
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+}
