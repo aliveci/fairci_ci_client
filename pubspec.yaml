@@ -12,10 +12,13 @@ dependencies:
   hooks_riverpod: ^2.0.0-dev.9
   process_run: ^0.12.3+2
   shared_preferences: ^2.0.15
+  firebase_core: ^1.22.0
+  firebase_auth: ^3.9.0
+  cloud_firestore: ^3.4.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^2.0.1
 flutter:
   uses-material-design: true

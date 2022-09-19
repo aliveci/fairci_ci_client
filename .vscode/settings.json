@@ -1,9 +1,10 @@
 {
     "cSpell.words": [
-        "cupertino",
-        "fairci",
-        "prefs",
-        "riverpod"
+      "cupertino",
+      "fairci",
+      "firestore",
+      "prefs",
+      "riverpod"
     ],
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
